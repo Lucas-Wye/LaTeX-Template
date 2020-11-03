@@ -23,3 +23,5 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
+### Personal Files
+cv/cv.tex

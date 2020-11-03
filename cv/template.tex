@@ -1,0 +1,63 @@
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{simplecv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+% Set applicant's personal data for header
+\name{XXX}
+\address{XXX University, XXX, XXX}
+\contacts{(+86) XXX-XXXX-XXXX \linebreak XXX@XXX}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{XXX, XXX}{XXX University}{20XX.XX -- 20XX.XX}
+			\begin{itemize}
+				\item B.S.E. in XXX.  In-major GPA: XXX/4.0.
+				\item Undergraduate Core Coursework: \\ 
+				XXX 99, XXX 98
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Professional Experience}		
+		\begin{cvsubsection}{XXXXX}{}{20XX.XX -- 20XX.XX}		
+			\begin{itemize}
+				\item XXX
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Excurricular Activities}
+		\begin{cvsubsection}{XXX}{}{20XX.XX -- 20XX.XX}
+			\begin{itemize}
+				\item XXX
+			\end{itemize}
+		\end{cvsubsection}
+
+	\end{cvsection}
+	
+	\begin{cvsection}{Awards \& Honors}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item XXXX
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages \& Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \LaTeX, XXX
+				\item Visual Studio Code, XXX
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+\end{document}

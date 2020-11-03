@@ -12,4 +12,5 @@ Run `latexmk` to compile the `.tex` file and run `latexmk -c` to remove the inte
 ## Detail
 [pre](./pre): Presentation templates which can replace `Powerpoint` and `Keynote`.  
 [report](./report): Useful templates for courses project.  
-[zjuthesis](https://github.com/TheNetAdmin/zjuthesis): Zhejiang University Graduation Thesis LaTeX Template.
+[zjuthesis](https://github.com/TheNetAdmin/zjuthesis): Zhejiang University Graduation Thesis LaTeX Template.  
+[cv](./cv): A simple curriculum vitae template.
