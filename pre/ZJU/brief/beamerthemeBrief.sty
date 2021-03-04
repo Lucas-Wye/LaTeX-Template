@@ -1,0 +1,56 @@
+%设置字体
+\RequirePackage{graphicx}
+\RequirePackage{ctex}
+\RequirePackage{xcolor}
+\RequirePackage{float}
+\usefonttheme[onlymath]{serif}
+\let\songti\relax%定义
+\newCJKfontfamily\songti{SimSun}[AutoFakeBold]%重定义 songti
+%字体定义
+\setbeamerfont{title}{family=\heiti,size=\huge}
+\setbeamerfont{subtitle}{family=\kaishu,size=\huge}
+\setbeamerfont{section}{family=\songti,size=\Large}
+\setbeamerfont{subsection}{family=\songti,size=\large}
+\setbeamerfont{author}{family=\kaishu,size=\Large}
+\setbeamerfont{institute}{family=\heiti,size=\normalsize}
+\setbeamerfont{date}{family=\kaishu,size=\normalsize}
+\setbeamerfont{section in headline}{family=\kaishu,size=\footnotesize}
+\setbeamerfont{block title}{family=\songti,size=\Large,series=\bfseries}
+\setbeamerfont{block body}{family=\songti,size=\normalsize,series=\bfseries}
+\setbeamerfont{frametitle}{family=\songti,size=\LARGE,series=\bfseries}
+\setbeamerfont{itemize/enumerate body}{family=\songti,size=\normalsize,series=\bfseries}
+\setbeamerfont{tableofcontents}{family=\songti,size=\normalsize}
+\setbeamerfont{alerted text}{family=\songti,size=\normalsize,series=\bfseries}
+%颜色定义
+\setbeamercolor{title}{fg=blue!50!black}
+\setbeamercolor{subtitle}{fg=black}
+\setbeamercolor{author}{fg=black}
+\setbeamercolor{institute}{fg=blue!30!black}
+\setbeamercolor{headline canvas}{fg=blue!30!black,bg=blue!10!white}
+\setbeamercolor{block body}{bg=blue!5!white}
+\setbeamercolor{block title}{fg=blue!40!black,bg=blue!20!white}
+\setbeamercolor{frametitle}{fg=blue!40!black}
+\setbeamercolor{alerted text}{fg=red!50!black}
+%headline
+\setbeamertemplate{headline}{
+	\hbox{
+	\begin{beamercolorbox}[ht=4ex,wd=0.8\linewidth]{headline canvas}
+		\usebeamerfont{section in headline}
+		\insertsectionnavigationhorizontal{0.8\linewidth}{}{}
+	\end{beamercolorbox}
+	
+	\begin{beamercolorbox}[ht=4ex,wd=0.3\linewidth,right]{}
+	\usebeamerfont{section in headline}
+	\insertframenumber/\inserttotalframenumber
+	\end{beamercolorbox}}
+}
+%block
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\newcommand{\mylogo}{\includegraphics[width=3ex]{fig/logo1.eps}\hspace{1ex}}
+%item
+\setbeamertemplate{itemize/enumerate body}{
+	\usebeamerfont{itemize/enumerate body}
+}
+\setbeamertemplate{itemize items}{\color{blue!40!black}$\bullet$}
+\setbeamertemplate{enumearte items}{\color{blue!40!black}}
+%frame
